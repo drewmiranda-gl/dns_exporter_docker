@@ -1,0 +1,28 @@
+# HELP dnsexp_dns_time_seconds DNS query time in seconds.
+# TYPE dnsexp_dns_time_seconds histogram
+# HELP dnsexp_dns_success Was this DNS query successful or not, 1 for success or 0 for failure.
+# TYPE dnsexp_dns_success gauge
+dnsexp_dns_success 0.0
+# HELP dnsexp_dns_failure_reason The reason this DNS query failed
+# TYPE dnsexp_dns_failure_reason gauge
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="no_failure"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_module"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_config"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_server"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_family"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_ip"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_port"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_path"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_protocol"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_query_name"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_query_type"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_request_query_class"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="timeout"} 1.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_response_rcode"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_response_flags"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_response_answer_rrs"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_response_authority_rrs"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="invalid_response_additional_rrs"} 0.0
+dnsexp_dns_failure_reason{dnsexp_dns_failure_reason="other_failure"} 0.0
+# HELP dnsexp_dns_record_ttl_seconds DNS query response record TTL in seconds.
+# TYPE dnsexp_dns_record_ttl_seconds histogram
