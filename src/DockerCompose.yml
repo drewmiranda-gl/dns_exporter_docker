@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  dns_exporter:
+    image: dns_exporter:latest
+    container_name: dns_exporter
+    restart: unless-stopped
+    ports:
+      - "15353:15353/tcp"
+    # optional config file
+    # volumes:
+    #   - type: bind
+    #     source: ./dns_exporter.yml
+    #     target: /dns_exporter.yml
+    #     read_only: true
+    deploy:
+      resources:
+        limits:
+          memory: 256m
